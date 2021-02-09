@@ -1,10 +1,10 @@
 body {
 margin:60px;
-background: #ecb0ee;
+background: #1b1b1b;
 font-size: 120%;
-font-family: serif;
-font-family:Garamond;
+font-family: Garamond, serif;
 font-weight: 350;
+color: white;
 }
 
 div.everything {
@@ -16,14 +16,15 @@ max-width: 1400px;
 
 .cover {
 float: left;
-width: 30%;
-margin: 20px;
+width: 40%;
+margin: 5px;
+margin-top: 10px;
 }
 
 .intro {
 width: 50%;
 float: right;
-margin: 20px;
+margin: 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -43,26 +44,30 @@ margin: 20px;
 img {
 width: 100%;
 margin: 0;
+border: 2px solid rgb(207, 71, 146);
 }
 
 h1 {
-font-size:2.2em;
+width: auto;
+font-size:4em;
 font-variant: small-caps;
-color:#733bc9;
-font-weight: 600;
-margin-bottom: 15px;
+color:rgb(207, 71, 146);
+font-weight: 700;
 text-align: center;
+margin-bottom: 40px;
 }
 
 h2 {
-font-size:1.5em;
-color:#7016d5;
-font-weight: 500;
+margin: 0;
+margin-bottom: 30px;
+font-size:2.2em;
+color:rgb(0, 156, 218);
+font-weight: 600;
 text-align: center;
 }
 
 ul {
-border: 2px solid #820dc4;
+border: 2px solid rgb(0, 156, 218);
 width: 220px;
 margin-top: 0;
 margin-bottom: 20px;

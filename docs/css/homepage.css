@@ -2,7 +2,7 @@ body {
 margin:60px;
 background: #1b1b1b;
 font-size: 120%;
-font-family: Garamond, serif;
+font-family: Garamond, Georgia, serif;
 font-weight: 350;
 color: white;
 }
@@ -64,6 +64,11 @@ font-size:2.2em;
 color:rgb(0, 156, 218);
 font-weight: 600;
 text-align: center;
+}
+
+a.readit {
+  text-decoration: none;
+  color:rgb(0, 156, 218);
 }
 
 ul {

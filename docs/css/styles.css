@@ -1,75 +1,320 @@
-/* This stylesheet is where to add styles for your Shakespeare Play */
-/*We usually add something general for the body*/
 * {
-  margin: 0;
-  padding: 0;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*your style rules go in here */
+html {
+  scroll-behavior: smooth;
 }
-
-/*Here follows the class names that you will have in your html*/
-/*You may have more if you added styles in InDesign*/
-/*You need to add the style attributes between the curly brackets*/
-
-/* the following may not be used  */
-
-section.cover {
-  text-align: center;
-  width: 70%;
-  margin: 20px auto;
-}
-
-img.playimage {
-  /* you will need a width attribute in here */
-  max-width: 40%;
-  padding: 20px auto;
-}
-
-img.shakespeareimage {
-  /* you will need a width attribute in here */
-  max-width: 40%;
-  padding: 20px auto;
-}
-
-/* If you ahe created any new stlyes in InDesign and used export tags then you need to add them here */
 
 body {
+  font-family: Garamond, Georgia, serif;
+  background: rgb(113, 96, 52);
+  color: white;
+  font-size: 1.1em;
 }
+
+div.everything {
+  width: 65%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: black;
+  padding: 20px;
+}
+
 section.dramatis {
 }
-section.play {
+
+section.fullplay {
 }
-div.sceneImage {
+
+nav.contents {
+background: rgb(161, 161, 161);
+position: fixed;
+top:0;
+left: 0;
+width: 100%;
 }
+
+nav.contents ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+h1.toc {
+  display:none;
+}
+
+nav.contents ul li a {
+text-decoration: none;
+padding: 0.4rem 0.6rem;
+display: block;
+color: black;
+font-size: 1rem;
+font-weight: normal;
+}
+
+nav.contents ul li:hover {
+background: rgb(113, 96, 52);
+}
+
+nav.contents ul li a:hover {
+color: white;
+}
+
+nav.contents ul li ul {
+background: rgb(161, 161, 161);
+display: none;
+}
+
+nav.contents ul li:hover ul {
+display: flex;
+flex-direction: column;
+}
+
+nav.contents ul li ul li a {
+padding: 0.3rem 1.5rem;
+font-size: 0.8rem;
+}
+
+@media screen and (min-width: 700px) {
+
+nav.contents ul {
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+}
+
+nav.contents ul li a {
+padding: 0.6rem 0.8rem;
+font-size: 1.1rem;
+font-weight: bold;
+}
+
+nav.contents ul li {
+flex: 1 1 auto;
+position: relative;
+}
+
+nav.contents ul li ul li {
+flex: 1 0 auto;
+width: 100%;
+}
+
+nav.contents ul li ul li a {
+padding: .3rem 0;
+font-size: 0.9rem;
+}
+
+nav.contents ul li ul {
+display: none;
+position: absolute;
+background-color: rgb(161, 161, 161);
+width: 100%;
+}
+
+nav.contents ul li:hover ul {
+display: flex;
+flex-direction: column;
+}
+
+}
+
+section.SceneImage {
+  margin-bottom: 20px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9em;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+  border: 3.5px solid rgb(113, 96, 52);
+  }
+
+img.takemeup {
+  border: 0;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+h1 a, h2 a {
+  position: relative;
+  top: -65px;
+}
+
+@media screen and (max-width: 700px) {
+  h1 a, h2 a {
+    position: relative;
+    top: -340px;
+  }
+}
+
+
+h1 {
+font-weight: bold;
+margin-top: 0;
+margin-bottom: 20px;
+text-align: center;
+background: rgb(218, 189, 119);
+color: black;
+padding: 15px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+
+h1.playtitle {
+margin-top: 30px;
+font-size: 3em;
+background: black;
+padding: 15px;
+color: rgb(218, 189, 119);
+border: 5px solid rgb(218, 189, 119);
+letter-spacing: 0.15em;
+}
+
 h1.act {
+font-variant: small-caps;
+font-size: 2.8em;
 }
-p.character {
-}
-p.charactername {
-}
+
 h1.dramatishead {
+font-size: 2.4em;
 }
-h2.firstscene {
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
 }
-h2.location {
+
+col.column1 {
+width: 200px;
 }
+
+col.column2 {
+width: auto;
+}
+
+table td.Dramatis-Personae {
+border-right: 2px solid rgb(113, 96, 52);
+}
+
+p.character_name {
+  font-weight: bold;
+}
+
+p.character_listing {
+  margin-left: 10px;
+}
+
 p.play_location {
+  color: rgb(218, 189, 119);
+  font-weight: bold;
+  font-size: 1.8em;
+  text-align: center;
 }
-p.prose {
+
+h2.firstscene, h2.scene {
+font-size: 2.5em;
 }
+
 h2.scene {
+margin-top: 20px;
+border-top: 2px solid rgb(113, 96, 52);
+padding-top: 20px;
 }
-p.song {
+
+h2.location {
+font-size: 2em;
+color: rgb(161, 161, 161);
 }
-h2.stagedirection {
+
+h2.stagedirections {
+  color: rgb(218, 189, 119);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
 }
+
+p.character {
+color: rgb(218, 189, 119);
+font-size: 1.2em;
+font-weight: bold;
+margin-bottom: 4px;
+}
+
+p.prose {
+margin-left: 85px;
+text-indent: -15px;
+max-width: 350px;
+}
+
 p.verseline {
+margin-left: 85px;
+text-indent: -15px;
 }
-span.character_role {
+
+p.theend {
+  font-family: 'Parisienne', "Brush Script MT", cursive;
+  font-size: 1.7em;
+  color: rgb(161, 161, 161);
+  text-align: center;
+  font-weight: 400;
 }
-span.stage_directions_inline {
+
+p.verse_stagedirection {
+  text-align: right;
+  color: rgb(218, 189, 119);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2em;
+  max-width: 440px;
+  }
+
+p.song {
+  color: rgb(161, 161, 161);
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+body {
+  font-size: 0.9em;
+}
+
+p.prose {
+margin-left: 30px;
+text-indent: -15px;
+}
+
+p.verseline {
+margin-left: 30px;
+text-indent: -15px;
+}
+}
+
+span.short_stagedirection {
+color: rgb(161, 161, 161);
+font-style: italic;
+font-weight: bold;
 }

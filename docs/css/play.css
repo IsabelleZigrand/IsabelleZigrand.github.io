@@ -125,14 +125,14 @@ flex-direction: column;
 
 section.LocationImage {
   margin-bottom: 20px;
-  width: 40%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
 
 section.SceneImage {
   margin-bottom: 20px;
-  width: 40%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9em;
@@ -145,10 +145,14 @@ img {
   }
 
 @media screen and (min-width: 1000px) {
-    section.SceneImage {
+section.SceneImage {
+      width: 40%;
       float: right;
       margin: 20px 0 20px 20px;
     }
+section.LocationImage {
+  width: 40%;
+}
 
   }
 

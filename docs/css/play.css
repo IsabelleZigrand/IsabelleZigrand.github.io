@@ -23,18 +23,13 @@ div.everything {
   padding: 20px;
 }
 
-section.dramatis {
-}
-
-section.fullplay {
-}
-
 nav.contents {
 background: rgb(161, 161, 161);
 position: fixed;
 top:0;
 left: 0;
 width: 100%;
+z-index: 100;
 }
 
 nav.contents ul {

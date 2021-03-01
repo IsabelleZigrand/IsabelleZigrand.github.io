@@ -23,6 +23,12 @@ div.everything {
   padding: 20px;
 }
 
+section.dramatis {
+}
+
+section.fullplay {
+}
+
 nav.contents {
 background: rgb(161, 161, 161);
 position: fixed;
@@ -330,6 +336,12 @@ div.everything {
   width: 80%;
 }
 
+img.takemeup {
+  width: 30px;
+  bottom: 5px;
+  right: 5px;
+}
+
 p.prose {
 margin-left: 30px;
 text-indent: -15px;
@@ -345,6 +357,14 @@ text-indent: -15px;
 
 div.everything {
   width: 100%;
+}
+
+img.takemeup {
+  width: 30px;
+  bottom: 5px;
+  right: 5px;
+  background-color: rgb(113, 96, 52);
+  padding: 2px;
 }
 
 body {

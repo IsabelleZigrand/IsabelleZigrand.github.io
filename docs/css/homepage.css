@@ -27,20 +27,6 @@ float: right;
 margin: 5px;
 }
 
-@media screen and (max-width: 700px) {
-.cover {
-  float:none;
-  width:auto;
-}
-.intro {
-  float:none;
-  width:auto;
-}
-.everything {
-  width:auto;
-}
-}
-
 img {
 width: 100%;
 margin: 0;
@@ -84,4 +70,37 @@ p {
 margin:0;
 margin-bottom: 20px;
 line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+body {
+  font-size: 100%;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+font-size:2em;
+}
+
+ul {
+width: 180px;
+padding-right: 10px;
+}
+
+.cover {
+  float:none;
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+.intro {
+  float:none;
+  width:auto;
+}
+.everything {
+  width:auto;
+}
 }
